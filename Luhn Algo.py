@@ -4,9 +4,9 @@ def luhn_algo(card_number):
     second_digit = False
 
     for i in range(num_digits - 1, -1, -1):
-        d = ord(card_number[i]) - ord('0')
+        d = int(card_number[i])
 
-        if second_digit:
+        if second_digit = True:
             d = d * 2
 
         n_sum += d // 10
